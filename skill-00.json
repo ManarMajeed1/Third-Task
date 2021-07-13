@@ -1,0 +1,580 @@
+{
+  "intents": [
+    {
+      "intent": "أفلام",
+      "examples": [
+        {
+          "text": "A Fall from Grace"
+        },
+        {
+          "text": "curula"
+        },
+        {
+          "text": "Now you see me"
+        },
+        {
+          "text": "taken"
+        },
+        {
+          "text": "The invisible guest"
+        },
+        {
+          "text": "wonder"
+        },
+        {
+          "text": "افلام"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "انتقال",
+      "examples": [
+        {
+          "text": "اي"
+        },
+        {
+          "text": "يس"
+        },
+        {
+          "text": "يلا"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "بودكاست",
+      "examples": [
+        {
+          "text": "بودكاست"
+        },
+        {
+          "text": "حكايا"
+        },
+        {
+          "text": "سوالف بزنس"
+        },
+        {
+          "text": "فنجان"
+        },
+        {
+          "text": "قضايا جنائية"
+        },
+        {
+          "text": "كيف بدأت"
+        },
+        {
+          "text": "مربع"
+        },
+        {
+          "text": "مستدفر"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ترحيب",
+      "examples": [
+        {
+          "text": "hi"
+        },
+        {
+          "text": "أهلا"
+        },
+        {
+          "text": "السلام عليكم"
+        },
+        {
+          "text": "هاي"
+        },
+        {
+          "text": "يا هلا"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "روايات",
+      "examples": [
+        {
+          "text": "اركاديا"
+        },
+        {
+          "text": "روايات"
+        },
+        {
+          "text": "لغز اكسفورد لأجاثا كريستي"
+        },
+        {
+          "text": "مئة عام من العزلة"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "مسلسلات",
+      "examples": [
+        {
+          "text": "Black mirror"
+        },
+        {
+          "text": "Game of Throns"
+        },
+        {
+          "text": "la monta"
+        },
+        {
+          "text": "Lost"
+        },
+        {
+          "text": "scorpion"
+        },
+        {
+          "text": "stranger things"
+        },
+        {
+          "text": "Suits"
+        },
+        {
+          "text": "the innocent"
+        },
+        {
+          "text": "The Originals"
+        },
+        {
+          "text": "الرشاش"
+        },
+        {
+          "text": "مسلسلات"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "مسلسلات",
+            "options": [
+              {
+                "label": "Black Mirror ",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Game Of Thrones ",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "la manta",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Lost",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "suits",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "The Innocent ",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "The Originals",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "الرشاش",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#مسلسلات",
+      "dialog_node": "node_10_1626014771565",
+      "previous_sibling": "node_1_1626014436038"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "بودكاست",
+            "options": [
+              {
+                "label": "فنجان",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "مربع",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "حكايا",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "سوالف بزنس",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "قضايا جنائية",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "كيف بدأت",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              },
+              {
+                "label": "مستدفر",
+                "value": {
+                  "input": {
+                    "text": "7"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#بودكاست",
+      "dialog_node": "node_1_1626014436038",
+      "previous_sibling": "node_9_1626013802612"
+    },
+    {
+      "type": "standard",
+      "title": "أفلام",
+      "output": {
+        "generic": [
+          {
+            "title": "أفلام",
+            "options": [
+              {
+                "label": "Now you see me",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Taken",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "The invisible guest",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Wonder",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "A Fall From Grace",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#أفلام",
+      "dialog_node": "node_2_1626174976435",
+      "previous_sibling": "node_10_1626014771565"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "روايات",
+            "options": [
+              {
+                "label": "اركاديا",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "لغز اوكسفورد",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "مئة عام من العزلة",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#روايات",
+      "dialog_node": "node_2_1626175169790",
+      "previous_sibling": "node_2_1626174976435"
+    },
+    {
+      "type": "standard",
+      "title": "ترحيب",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "هلاا والله، نورتنا"
+              },
+              {
+                "text": "اهلاا، على بوتنا نور"
+              },
+              {
+                "text": "الله يحييك"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "أنا موجود هنا عشان اعطيك اقتراحات تطلعك من الطفش، مستعد؟"
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ترحيب",
+      "dialog_node": "node_3_1626011834602",
+      "previous_sibling": "مرحبا"
+    },
+    {
+      "type": "standard",
+      "title": "-",
+      "output": {
+        "generic": [
+          {
+            "title": "مقترحاتي",
+            "options": [
+              {
+                "label": "روايات",
+                "value": {
+                  "input": {
+                    "text": "#روايات"
+                  }
+                }
+              },
+              {
+                "label": "أفلام",
+                "value": {
+                  "input": {
+                    "text": "#أفلام"
+                  }
+                }
+              },
+              {
+                "label": "مسلسلات",
+                "value": {
+                  "input": {
+                    "text": "#مسلسلات"
+                  }
+                }
+              },
+              {
+                "label": "بودكاست",
+                "value": {
+                  "input": {
+                    "text": "#بودكاست"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "وش ودك؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#انتقال",
+      "dialog_node": "node_9_1626013802612",
+      "previous_sibling": "node_3_1626011834602"
+    },
+    {
+      "type": "standard",
+      "title": "أي شيء آخر",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "لم أفهم، يمكنك محاولة اعادة الصياغة"
+              },
+              {
+                "text": "هل يمكنك اعادة صياغة عبارتك؟ أنا لا فهم"
+              },
+              {
+                "text": "لم أفهم قصدك"
+              },
+              {
+                "text": "همم ،جرب شي ثاني"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "أي شيء آخر",
+      "previous_sibling": "node_2_1626175169790",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "يا أهلا وسهلا!",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "يا أهلا وسهلا!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "مرحبا"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": ":هل قصدت",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "كل ما سبق خطأ"
+    },
+    "human_agent_assist": {
+      "prompt": ":هل قصدت"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "00",
+  "language": "ar",
+  "description": ""
+}
